@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Conociendo formularios</h1>
+	
+
+	<form action="success.html">
+		<br>
+		<label for="">Fecha de registro</label>
+		<input type="text" value ="22/12/2018" disabled>
+		<br>
+		<input type="text" placeholder="Nombres">
+		<br>
+		<label for="">Ingresa Nombres</label>
+		<input type="text" name="nombres" required ><br>
+		<label for="">Apellidos</label>
+		<input type="text" name="apellidos" required><br>
+		<label for="">Correo</label>
+		<input type="text" name="correo" required><br>
+		<label for="">Fecha</label>
+		<input type="text" name="fecha"><br>
+		<label for="">contraseña</label>
+		<input type="password" name="contraseña"><br>
+		<label for="">Cursos</label><br>
+
+		
+		
+		<label><input type="checkbox" checked> Html</label>
+		<br>
+		
+		
+		
+		<label> <input type="checkbox">CSS </label><br>
+		
+		
+		
+		<label><input type="checkbox"> JS</label><br>
+		<br>
+		<label>Horario</label><br>
+		<label><input type="radio" name="turno"> Mañana</label><br>
+		<label><input type="radio" name="turno"> Tarde</label><br>
+		<label><input type="radio" name="turno"> Noche</label><br>
+		<br>
+		<label>Distritos</label><br>
+
+		<select>
+			<option value="0" disabled selected>Selecciona un distrito</option>
+			<option value="1">Lince</option>
+			<option value="2">Miraflores</option>
+			<option value="3">Jesus Maria</option>
+			<option value="4">Breña</option>
+			<option value="5">San Juan de Lurigancho</option>
+		</select>
+		<br>
+		<label >Deje su comentario</label><br>
+		<textarea></textarea>
+
+		<br>
+		<label>Suba su archivo</label>
+		<br>
+		<input type="file">
+
+
+		<br><input type="submit" value="Enviar datos">
+	
+	</form>
+
+</body>
+</html>

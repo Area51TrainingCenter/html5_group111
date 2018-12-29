@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<h1 style="color:red;font-size: 30px;text-transform: uppercase;font-family: arial;">Título modificado por CSS</h1>
+
+		<p class="main-font"><span class="text1 fuente-principal">Lorem</span> ipsum dolor sit amet, consectetur adipisicing elit. Rem modi, temporibus amet autem corporis deleniti incidunt quasi quo asperiores! Nam laborum pariatur ab dolorem distinctio similique accusamus corporis accusantium <span class="text2 fuente-principal">necessitatibus</span>.</p>
+	
+
+		<p id="parrafo1" class="text3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, recusandae fugit repellendus voluptatem velit id reprehenderit consequuntur itaque vel modi explicabo cum, doloribus, animi beatae eligendi mollitia eius sunt eum.</p>
+		
+		<strong id="textos" class="otrotexto">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong>
+
+
+	</body>
+</html>
+
+<style>
+	/* seleccionar a la etiqueta p */
+	/* selectores : */
+	
+	/* selector por nombre de etiqueta */
+
+	p{
+		color:blue;	
+		font-size: 16px;
+	}
+	
+	/* selector de tipo class */
+	.text1{
+		color:red;
+		font-size: 40px;
+	}
+	.text2{
+		font-size: 40px;
+		color: orange;
+	}
+	.fuente-principal{
+		font-family: arial;
+	}
+	
+	/* selector de tipo ID */
+	#parrafo1{
+		color: skyblue;
+	}
+
+
+	/** problema **/
+	/* jeraquia #id>.class>etiqueta */
+	
+	strong{
+		color:red;
+	}
+	#textos{
+		color: green;
+	}
+	.otrotexto{
+		color: blue;
+	}
+
+
+
+</style>
+
+
+
+
+
+

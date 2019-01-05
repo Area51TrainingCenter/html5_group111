@@ -1,0 +1,14 @@
+body{
+	color: black;
+}
+.title{
+background-color: red;
+width: 100px;
+color: white;
+}
+.text{
+
+background-color: green;
+width: 700px;
+color:white;
+}

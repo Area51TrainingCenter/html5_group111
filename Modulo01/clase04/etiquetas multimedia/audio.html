@@ -7,7 +7,15 @@
 <body>
 	<h1>Probando la etiqueta audio</h1>
 
-	<audio src="recursos/sample.mp3" controls></audio>
+	<!--<audio src="recursos/sample.mp3" type="audio/mp3" controls autplay loop muted preload></audio>-->
+	
+	<audio controls preload autoplay loop muted>
+		<source src="recursos/sample.mp3" type="audio/mp3">
+		<source src="recursos/sample.ogg" type="audio/ogg">
+		el navegador no soporta la etiqueta
+	</audio>
+
+
 	
 </body>
 </html>

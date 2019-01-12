@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Border box</title>
+</head>
+<body>
+	<div class="box">
+		<div class="item1">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae voluptas nisi id possimus reprehenderit, illum quos neque praesentium ex quia dolorem tempora accusantium culpa. Libero ea, iusto ut voluptatibus quis?</p>
+		</div>
+		<div class="item2">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus similique rem possimus hic alias ipsam dolore recusandae non perferendis quod in dolor deleniti, omnis facilis. Labore sit facilis libero, iusto.</p>
+		</div>
+	</div>
+	
+</body>
+</html>
+
+<style>
+*{
+	box-sizing: border-box;
+	-ms-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+
+}
+	.box{
+		width: 600px;
+		background-color:green;
+	}
+	.item1{
+		width: 296px;
+		height: 200px;
+		background-color: blue;
+		display: inline-block;
+		vertical-align: top;
+		padding: 20px;
+
+
+	}
+	.item2{
+		width: 296px;
+		height: 200px;
+		background-color: skyblue;
+		display: inline-block;
+		vertical-align: top;
+		border:5px solid red;
+	}
+</style>

@@ -17,3 +17,16 @@ padding:10px 50px 20px 30px;
 
 
 }
+
+.title{
+	background-color: red;
+	color: white;
+	padding: 20px;
+}
+
+.texto1{
+	background-color: blue;
+	padding: 60px;
+	color: white;
+	display: inline-block;
+}

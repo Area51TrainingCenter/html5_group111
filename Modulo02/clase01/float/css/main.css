@@ -1,0 +1,46 @@
+*{
+	box-sizing: border-box;
+}
+.contenedor{
+	width: 800px;
+	background-color: #b6b6b6;
+	margin:0 auto;
+}
+.limpiador{
+	clear: both;
+}
+.box1{
+	width: 400px;
+	height: 300px;
+	background-color: skyblue;
+	float: left;
+}
+.box2{
+	width: 400px;
+	height: 150px;
+	background-color: tomato;
+	float: left;
+}
+
+.header-site{
+	background-color: black;
+	color: white;
+	padding:20px;
+	font-family: arial;
+
+}
+.header-site h1{
+	font-size: 30px;
+	font-weight: bold;
+	float: left;
+
+
+}
+.header-site nav{
+	float: right;
+	margin-top: 7.5px;
+}
+.header-site nav ul li{
+	display: inline-block;
+	vertical-align: top;
+}

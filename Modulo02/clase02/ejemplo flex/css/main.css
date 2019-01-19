@@ -1,0 +1,26 @@
+.contenido{
+
+width: 800px;
+
+background-color: tomato;
+display: flex;
+flex-direction: row;
+justify-content:space-around;
+align-items: center;
+flex-wrap: wrap;
+}
+h1{
+	font-size: 40px;
+	color: white;
+	font-family: arial
+}
+.caja1{
+	width: 150px;
+	height: 150px;
+	background-color: skyblue;
+}
+.caja2{
+	width: 150px;
+	height: 150px;
+	background-color: pink;
+}

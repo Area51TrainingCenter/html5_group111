@@ -1,0 +1,22 @@
+.contenedor{
+	width: 800px;
+	background-color: black;
+
+}
+
+.bloque1{
+	width: 200px;
+	height: 200px;
+	background-color: blue;
+	float: left;
+}
+
+.bloque2{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	float: right;
+}
+
+.limpiador{
+	clear: both;}

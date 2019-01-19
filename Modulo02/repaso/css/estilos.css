@@ -1,0 +1,13 @@
+body{
+	font-family: arial;
+}
+#title{
+	color: red;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.texto{
+	color: blue;
+	font-size: 22px;
+}

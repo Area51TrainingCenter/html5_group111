@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="contenido">
+		<div class="box1"> </div>
+		<div class="box2"> </div>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>
+
+<style>
+	.contenido{
+		width: 600px;
+		margin:0 auto;
+		background-color: skyblue;
+	}
+	.box1{
+	width: 300px;
+	height: 200px;
+	background-color: black;
+	float: left;
+	}
+	.box2{
+	width: 300px;
+		height: 200px;
+	background-color: blue;
+	float: right;
+	}
+	.clear{
+		clear: both;
+	}
+
+	@media screen and (min-width: 0) and (max-width: 600px){
+		.contenido{
+			width: 100%;
+			text-align: center;
+		}
+		.box2
+		{
+			float: none;
+			display: inline-block;
+		
+		}
+		.box1{
+			float: none;
+			display: inline-block;
+			
+		}
+	}
+</style>

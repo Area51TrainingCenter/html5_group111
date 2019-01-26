@@ -1,0 +1,136 @@
+/*@media screen and (min-width: 0px) and (max-width: 1024px){
+	.contenedor{
+		width: 100%;
+	}
+}*/
+
+@media screen and (min-width: 0px) and (max-width: 500px){
+.contenedor{
+	background-color: blue;
+	width: 100%;
+}
+ h1{
+ 	text-align: center;
+ }
+}
+@media screen and (min-width: 501px) and (max-width: 800px){
+.contenedor{
+	background-color: green;
+	width: 100%;
+}
+h1{
+	text-align: right;
+}
+}
+@media screen and (min-width: 801px) and (max-width: 1024px){
+
+.contenedor{
+	background-color: black;
+	width: 100%;
+}
+h1{
+	text-align: center;
+}
+
+}
+
+
+
+
+
+/*
+
+
+@media screen and (min-width: 0px) and (max-width: 400px){
+	 .listado{
+ 	width: 100%;
+ 	}
+
+ 	.item-listado{
+		width: 98%;
+		margin:10px 1%;
+	}
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 500px){
+	 .listado{
+ 	width: 100%;
+ 	}
+
+ 	.item-listado{
+		width: 47%;
+		margin:10px 1%;
+	}
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 768px){
+ .listado{
+ 	width: 100%;
+ 	background-color: yellow;
+ }
+ 	.item-listado{
+		width: 47%;
+		margin:1%;
+	}
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+	.listado{
+		width: 100%;
+		background-color: blue;
+	}	
+	.item-listado{
+		width: 30%;
+		margin:1%;
+	}
+}*/
+
+
+
+@media screen and (min-width: 0px) and (max-width: 400px){
+	 .listado{
+ 	width: 100%;
+ 	}
+.item-listado{
+		width: 100%
+	}
+ 	
+}
+
+
+@media screen and (min-width: 401px) and (max-width: 500px){
+	 .listado{
+ 	width: 100%;
+ 	}
+.item-listado{
+		width: 48%
+	}
+ 	
+}
+
+
+@media screen and (min-width: 501px) and (max-width: 768px){
+ .listado{
+ 	width: 100%;
+ 	background-color: yellow;
+ }
+ 	.item-listado{
+		width: 48%
+	}
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+	.listado{
+		width: 100%;
+		background-color: blue;
+	}	
+	.item-listado{
+		width: 32%
+	}
+	
+}
+

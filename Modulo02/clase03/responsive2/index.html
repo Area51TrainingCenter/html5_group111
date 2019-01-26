@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="item1"></div>
+		<div class="item2"></div>
+	</div>
+	
+</body>
+</html>
+
+<style>
+	.contenedor{
+		width: 1024px;
+		margin:0 auto;
+	}
+
+	.item1{
+	width: 500px;
+	height: 400px;
+	background-color: orange;
+	display: inline-block;
+	vertical-align: top;
+	}
+	.item2{
+	width: 500px;
+	height: 400px;
+	background-color: blue;
+	display: inline-block;
+	vertical-align: top;
+	}
+	@media screen and (min-width: 0px) and (max-width: 1024px){
+		.item1{
+			width: 100%;
+		}
+		.item2{
+			width: 100%;
+		}
+	}
+</style>

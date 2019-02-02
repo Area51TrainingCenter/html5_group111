@@ -1,0 +1,38 @@
+.title{
+	font-size: 20px;
+}
+
+@media screen and (min-width: 0px) and (max-width: 500px){
+	.title{
+		font-size: 30px;
+		color: blue;
+	}
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px){
+	.title{
+		font-size: 50px;
+		color: red;
+	}	
+}
+
+@media screen and (min-width: 801px) and (max-width: 1024px){
+	.title{
+		font-size: 60px;
+		color: silver;
+	}
+}
+
+
+
+@media screen (max-width: 1024px){
+
+}
+
+@media screen (max-width: 800px){
+
+}
+
+@media screen (max-width: 500px){
+
+}

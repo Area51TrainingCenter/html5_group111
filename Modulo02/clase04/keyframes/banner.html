@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<div class="banner">
+		
+		<h2 class="texto-intro">Bienvenido al Curso</h2>
+
+		<h2 class="texto-intro2">Incribete aquí</h2>
+		<a href="" class="ver-mas">Ver más</a>
+	</div>
+
+</body>
+</html>
+
+<style>
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	font-family: arial;
+}
+	.banner{
+		width: 400px;
+		height: 400px;
+		background-color: skyblue;
+		margin:30px;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.texto-intro{
+		font-weight: bold;
+		color: black;
+		font-size: 30px;
+		text-align: center;
+		position: absolute;
+		bottom: -100px;
+		
+		width: 100%;
+		animation: movimientointro 1s 1 0s forwards;
+	}
+
+	.texto-intro2{
+		font-weight: bold;
+		color: black;
+		font-size: 30px;
+		text-align: center;
+		position: absolute;
+		bottom: -100px;
+	
+		width: 100%;
+		animation: movimientointro2 1s 1 1s forwards;
+	}
+	
+	.ver-mas{
+		background-color: black;
+		font-size: 20px;
+		color: white;
+		display: inline-block;
+		width: 90%;
+		margin-left: 5%;
+		padding: 20px;
+		position: absolute;
+		top: 270px;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		opacity: 0;
+		animation: movimientointro3 1s 1 2s forwards;
+
+	}
+
+	@keyframes movimientointro{
+		0%{
+			bottom: -100px;
+		}
+		100%{
+			bottom:300px;
+		}
+	}
+
+	@keyframes movimientointro2{
+		0%{
+			bottom: -100px;
+		}
+		100%{
+			bottom:200px;
+		}
+	}
+	
+	@keyframes movimientointro3{
+		0%{
+			opacity: 0;
+		}
+		100%{
+			opacity: 1;
+		}
+	}
+
+
+
+</style>

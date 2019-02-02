@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Transition</title>
+</head>
+<body>
+	
+	<div class="box">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+	</div>
+</body>
+</html>
+<style>
+	.box{
+		width: 200px;
+		height: 200px;
+		background-color: red;
+		transition-property: background-color,border,width;
+		transition-duration: 1s;
+		transition-delay: 0s;
+		transition-timing-function: linear;
+
+		/*
+		transition:propiedad tiempo function delay;
+		*/
+	}
+
+	.box:hover{
+		background-color: blue;
+		border:10px solid black;
+		width: 500px;
+		font-size: 30px;
+	}
+</style>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Manejo DOM</title>
+	
+</head>
+<body>
+	
+	<h1 id="title" class="title-site">texto Modificado</h1>
+	<time id="fecha_actual"></time>
+	<br>
+	<span id="accion-actualizar"  class="actualizar">Actualizar Texto</span>
+	<span id="accion-regresar"  class="actualizar">Regresar Texto</span>
+	
+
+	<script src="js/funciones.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
+
+<style>
+	.actualizar{
+		display: inline-block;
+		padding: 20px;
+		background-color: black;
+		color: white;
+		font-family: arial;
+		font-size: 20px;
+	}
+	.title-site{
+		padding: 20px;
+		font-family: arial;
+		transition:all 0.3s linear;
+	}
+	.activo{
+		background-color: black;
+		color: white;
+	}
+
+	.desactivo{
+		background-color: gray;
+		color: silver;
+	}
+</style>

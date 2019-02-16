@@ -15,7 +15,7 @@
 				<form action="http://www.google.com">
 		
 					<div class="form-group">
-						<label>Nombres</label>
+						<label>Nombres <span id="error-nombre" class="error">Ingresa Dato</span></label>
 						<input id="inp_nombres" type="text" class="form-control">
 					</div>
 					
@@ -52,3 +52,15 @@
 	<script src="js/main.js"></script>
 </body>
 </html>
+<style>
+	.error{
+		font-weight: bold;
+		color: red;
+		text-transform: uppercase;	
+		margin-left: 20px;
+		display: none;
+	}
+	.show-error{
+		display: block;
+	}
+</style>

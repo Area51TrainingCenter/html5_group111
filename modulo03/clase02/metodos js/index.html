@@ -11,6 +11,47 @@
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, aliquid. Similique obcaecati illo mollitia iusto, molestias dignissimos unde vitae aspernatur. Deleniti debitis, velit perspiciatis sit consectetur blanditiis accusamus nihil. Pariatur.</p>
 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla, aliquid. Similique obcaecati illo mollitia iusto, molestias dignissimos unde vitae aspernatur. Deleniti debitis, velit perspiciatis sit consectetur blanditiis accusamus nihil. Pariatur.</p>
 		<span class="btn-modal">Ver Modal</span>
+
+		<section class="section-trabajos">
+			<h2>Trabajos</h2>
+			<ul class="tabs">
+				<li>Empresa</li>
+				<li>Educacion</li>
+				<li>Personal</li>
+				<li>Paisajes</li>
+				<li>Gamer</li>
+			</ul>
+			<div class="listado-trabajos"> 
+				<article>
+					<img src="https://via.placeholder.com/300x300" alt="">
+					<h2>Empresa</h2>
+				</article>
+				<article>
+					<img src="https://via.placeholder.com/300x300" alt="">
+					<h2>Eduacion</h2>
+				</article>
+				<article>
+					<img src="https://via.placeholder.com/300x300" alt="">
+					<h2>Personal</h2>
+				</article>
+				<article>
+					<img src="https://via.placeholder.com/300x300" alt="">
+					<h2>Personal</h2>
+				</article>
+
+				<article>
+					<img src="https://via.placeholder.com/300x300" alt="">
+					<h2>Paisajes</h2>
+				</article>
+				<article>
+					<img src="https://via.placeholder.com/300x300" alt="">
+					<h2>Gamer</h2>
+				</article>
+
+			</div>
+
+
+		</section>
 	</div>
 </body>
 </html>
@@ -43,5 +84,37 @@ body{
 		background-color: black;
 		color: white;
 
+		}
+	
+	.listado-trabajos{
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		align-content: center;
+	}
+	.listado-trabajos article{
+		width: 300px;
+		margin-bottom: 40px;
+	}
+	.tabs{
+		background-color: black;
+		display: flex;
+		justify-content: space-between;
+		height: 60px;
+		align-items: center;
+		color: white;
+		margin-bottom: 30px;
+	}
+	.tabs li{
+		flex-grow: 1;
+		text-align: center;
+		list-style: none;
+	}
+	.section-trabajos{
+		margin-top: 40px;
+	}
+	.section-trabajos h2{
+		text-align: center;
+		margin-bottom: 40px;
 	}
 </style>

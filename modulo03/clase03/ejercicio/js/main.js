@@ -15,18 +15,29 @@ $(".ui-nav-site ul li").click(function(){
   */
   $(".ui-nav-site ul li").removeClass("item-activo");
   $(this).addClass("item-activo");
+  var seccion=$(this).attr("data-seccion");
 
-  // $(window).scrollTop(); // te devuelve el scroll top
-  //$(window).scrollTop(650); mueve el scroll de la venta a lugar indicado
+  var limite=$("#"+seccion).offset().top;
+  /*$(window).scrollTop(limite);*/
 
-  var limite;
-  limite=$("#project").offset().top;
-
-  $(window).scrollTop(limite-50)
+  $("html,body").animate({scrollTop:limite-50},1000)
+})
+/*
+$("#item-services").click(function(){
+  var limite=$("#services").offset().top;
+  $(window).scrollTop(limite-50);
 })
 
+$("#item-projects").click(function(){
+  var limite=$("#project").offset().top;
+  $(window).scrollTop(limite-50);
+})
 
-
+$("#item-blog").click(function(){
+  var limite=$("#blog").offset().top;
+  $(window).scrollTop(limite-50);
+})
+*/
 
 
   $(window).scroll(function(){

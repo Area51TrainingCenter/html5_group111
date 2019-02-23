@@ -12,27 +12,72 @@
 	.thumb{
 		margin-top: 20px;
 	} 
-		.thumb li{ display: inline-block;vertical-align: top;margin:10px;width: 280px; }
+		.thumb li{ display: inline-block;vertical-align: top;margin:10px;width: 280px;opacity: 0.5 }
 		img{
 			width: 100%;
 		}
+		.thumb li.activo{
+			opacity: 1;
+		}
+		.marco-principal{
+		position: relative;
+		}
+		.nav-left{
+			position: absolute;
+			left: 10px;
+			top: 50%;
+			margin-top: -40px;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			display: inline-block;
+			background-color: black;
+			color: white;
+			font-size: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}	
+		.nav-right
+		{
+			position: absolute;
+			right: 10px;
+			top: 50%;
+			margin-top: -40px;
+			width: 80px;
+			height: 80px;
+			border-radius: 50%;
+			display: inline-block;
+			background-color: black;
+			color: white;
+			font-size: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
 	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
 	
 	<div class="container">
-		<div><img src="img/foto1.jpg" alt="">	</div>
+		<div class="marco-principal">
+			<span class="nav-left"> < </span>
+			<img  class="foto-principal" src="img/foto1.jpg" alt="">
+			<span class="nav-right"> > </span>
+		</div>
 		<ul class="thumb">
-			<li>
+			<li class="activo"  data-ruta="img/foto1.jpg">
 				<img src="img/foto1.jpg" alt="">
 			</li>
-			<li>
+			<li data-ruta="img/foto2.png" >
 				<img src="img/foto2.png" alt="">
 			</li>
-			<li>
-				<img src="img/foto3.jpg" alt="">
+			<li data-ruta="img/foto3.jpg">
+				<img src="img/foto3.jpg"  alt="">
 			</li>
 		</ul>
 	</div>
+	<script src="js/main.js"></script>
 </body>
 </html>

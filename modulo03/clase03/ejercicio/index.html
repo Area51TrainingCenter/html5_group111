@@ -24,6 +24,9 @@
 			margin:40px auto;
 			position: relative;
 		}
+		.contenedor-modal h2
+		{font-size: 20px;
+			font-weight: bold;}
 		.foto-modal{
 			width: 100%;
 		}
@@ -43,7 +46,7 @@
 		<div class="contenedor-modal">
 			<span class="btn-cerrar-modal">Cerrar</span>
 			<img class="foto-modal" src="https://via.placeholder.com/900x500" alt="">
-			<h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde at officiis praesentium nihil, earum quo doloremque perspiciatis totam maiores dolores nesciunt illum quae id veniam saepe distinctio ab repellat voluptatum.</h2>
+			<h2 id="title-modal">Lorem ipsum dolor sit amet</h2>
 		</div>
 	</div>
 	<div class="container">
@@ -116,30 +119,28 @@
 
 			<div class="grid-projects">
 				<div class="item-grid">
-					<a href="img/item1.jpg" data-lightbox="proyectos" data-title="Foto title">
-						<img src="img/item1.jpg">
-					</a>
+						<img src="img/item1.jpg" data-ruta="img/item1.jpg" data-title="Foto n1">
 				</div>
 				<div class="item-grid">
-					<a href="img/item2.jpg" data-lightbox="proyectos" data-title="Foto title">
-					<img src="img/item2.jpg">
-					</a>
+				
+					<img src="img/item2.jpg" data-ruta="img/item2.jpg" data-title="Foto n2">
+			
 				</div>
 				<div class="item-grid">
-				<a href="img/item3.jpg" data-lightbox="estudios" data-title="Foto title">
-					<img src="img/item3.jpg">
-					</a>
+			
+					<img src="img/item3.jpg" data-ruta="img/item3.jpg" data-title="Foto n3">
+					
 				</div>
 				<div class="item-grid">
-					<a href="img/item4.jpg" data-lightbox="estudios" data-title="Foto title">
-						<img src="img/item4.jpg">
-						</a>
+					
+						<img src="img/item4.jpg" data-ruta="img/item4.jpg" data-title="Foto n4">
+						
 				</div>
 				<div class="item-grid">
-					<img src="img/item5.jpg">
+					<img src="img/item5.jpg" data-ruta="img/item5.jpg" data-title="Este es el título de la Foto n5">
 				</div>
 				<div class="item-grid">
-					<img src="img/item6.jpg">
+					<img src="img/item6.jpg" data-ruta="img/item6.jpg" data-title="Foto n6">
 				</div>
 			</div>
 

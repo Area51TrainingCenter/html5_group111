@@ -40,14 +40,18 @@ $("#item-blog").click(function(){
 */
 
 
-  $(window).scroll(function(){
-  	var top=$(window).scrollTop();
-  	if(top>100){
-  	//	console.log("el menu debe ser fixed");
-  		$(".header-script").addClass("fixed-menu");
-  	}
-  	else{
-			$(".header-script").removeClass("fixed-menu");
+$(".item-grid").click(function(){
+   $(".modal").fadeIn(1000);
+   var title=$(this).find("img").attr("data-title");
+   var ruta=$(this).find("img").attr("data-ruta");
+   /*var title=$(this).attr("data-title");
+   var ruta=$(this).attr("data-ruta");*/
+   $("#title-modal").text(title) 
+   $(".foto-modal").attr("src",ruta);
+})
 
-  	}
-  })
+
+$(".btn-cerrar-modal").click(function(){
+  //$(".modal").hide(); 
+  $(".modal").fadeOut(800);
+})

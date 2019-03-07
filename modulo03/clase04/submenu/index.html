@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<header>
+		<nav class="nav-site">
+			<span class="ico-menu">Ico Menu</span>
+			<ul class="menu">
+				<li class="item">
+					<span class="texto-item">Inicio</span>
+					<ul class="sub-lista">
+						<li>Inicio 1</li>
+						<li>Inicio 2</li>
+						<li>Inicio 3</li>
+					</ul>
+				</li>
+				<li class="item"><span class="texto-item">Inicio</span>
+					<ul class="sub-lista">
+						<li>Inicio 1</li>
+						<li>Inicio 2</li>
+						<li>Inicio 3</li>
+					</ul>
+				</li>
+				<li class="item"><span class="texto-item">Inicio</span>
+					<ul class="sub-lista">
+						<li>Inicio 1</li>
+						<li>Inicio 2</li>
+						<li>Inicio 3</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	
+</body>
+</html>
+
+<style>
+	*{margin:0;
+		padding: 0;}
+	.nav-site{background-color: black;width: 500px;
+		margin:0 auto;}
+	.nav-site .item{
+		display: inline-block;
+		vertical-align: top;
+		
+		color: white;
+		font-family: arial;
+		
+	position: relative;
+	z-index: 1000;
+	}
+	.ico-menu{
+	padding: 10px;
+	color: white;
+	font-family: arial;
+	display: inline-block;
+	}
+
+	.nav-site .item .texto-item{
+		padding: 10px;
+		background-color: red;
+			color: white;
+			display: inline-block;
+	}
+	/*.nav-site .item:hover .sub-lista{
+		
+		top: 42px;
+	}*/
+	.show-sub-lista{
+		top: 42px!important;
+	}
+		.sub-lista{
+			position: absolute;
+			left: 0px;
+			/*top: 42px;*/
+		
+			top: -200px;
+			width: 100%;
+			list-style: none;
+			/*display: none;*/
+			transition: all 0.4s linear;
+			z-index: -10;
+		}
+		.sub-lista li{
+		margin-bottom: 5px;
+		background-color: black;
+		padding: 5px;
+		font-size: 14px;
+
+		}
+
+		@media screen and (min-width: 0px) and (max-width: 500px){
+			.nav-site{
+				width: 100%;
+
+			}.menu{
+			display: none;
+			}
+				.nav-site .item{
+					display: block;
+					background-color: blue;
+					text-align: right;
+					padding-right: 10px;
+				}
+				.sub-lista
+				{
+					position: static;
+					display: none;
+				}
+		}
+</style>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ 
+
+ <script>
+ 	$(".ico-menu").click(function(){
+ 		$(".menu").toggle();
+ 	})
+ 	var tamano=$(window).width();
+ 	console.log(tamano);
+
+ 	if(tamano>600){
+ 		$(".nav-site .item").click(function(){
+ 			$(".sub-lista").removeClass("show-sub-lista");
+ 			$(this).find(".sub-lista").addClass("show-sub-lista");
+ 		})	
+ 	}else{
+ 		$(".nav-site .item").click(function(){
+ 			$(this).find(".sub-lista").toggle();
+ 			
+ 		})	
+ 	}
+ 	
+ 	
+ </script>
